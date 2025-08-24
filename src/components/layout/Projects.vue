@@ -39,7 +39,7 @@
         <ProjectCard
           :title="project.title"
           :description="project.description"
-          :image="'/public' + project.image"
+          :image="project.image"
           :tags="project.tags"
           :liveLink="project.liveLink"
           :codeLink="project.codeLink"
