@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Vue</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      const theme = localStorage.getItem('theme');
+      if(!theme){
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      } else if (theme === 'dark'){
+        document.documentElement.classList.add('dark');
+      } else if (theme === 'light'){
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+  </body>
+</html>
