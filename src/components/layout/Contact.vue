@@ -2,7 +2,7 @@
   <section class="mt-32" id="contact">
     <SectionHeader title="Contact Me" />
     <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-      <form class="space-y-8">
+      <form class="space-y-8" @submit="sendEmail">
         <div v-for="(item, index) in inputs" :key="index">
           <Input
             :id="item.id"
@@ -10,6 +10,7 @@
             :type="item.type"
             :placeholder="item.placeholder"
             :rows="item.rows"
+            :name="item.id"
           />
         </div>
         <div class="flex justify-between">
@@ -43,6 +44,7 @@ import SectionHeader from "@/components/UI/SectionHeader.vue";
 import Input from "@/components/UI/Input.vue";
 import Button from "@/components/UI/Button.vue";
 import { ref } from "vue";
+import emailjs from "emailjs-com"
 
 const inputs = ref([
   {
@@ -67,4 +69,18 @@ const inputs = ref([
     rows: 6,
   },
 ]);
+
+const sendEmail = (e) => {
+  e.preventDefault();
+  emailjs.sendForm(
+    "service_9v2zpr8",
+    "template_zr45x3w",
+    e.target,
+    "RfWRTCtEFNA5ME1xo"
+  ).then(
+    () => alert("Message sent!"),
+    (error) => alert("Failed to send: " + error.text)
+  );
+};
+
 </script>
