@@ -19,13 +19,37 @@
           v-for="(tag, index) in tags"
           :key="index"
           class="inline-block dark:bg-primary bg-gray-700 text-gray-200 rounded-full px-3 py-1 text-sm font-semibold"
-        > #{{ tag }}</li>
+        >
+          #{{ tag }}
+        </li>
       </ul>
     </footer>
 
-    <div class="px-6 pb-4 flex justify-between items-center">
-        <a :href="liveLink" v-if="liveLink" class="text-secondary font-semibold hover:underline text-sm">Live Demo</a>
-        <a :href="codeLink" v-if="codeLink" class="text-secondary font-semibold hover:underline text-sm">View Code</a>
+    <div
+      class="px-6 pb-4 flex items-center"
+      :class="{
+        'justify-between': liveLink && codeLink,
+        'justify-end': !liveLink || !codeLink,
+      }"
+    >
+      <a
+        :href="liveLink"
+        v-if="liveLink"
+        class="text-secondary font-semibold hover:underline text-sm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Live Demo
+      </a>
+      <a
+        :href="codeLink"
+        v-if="codeLink"
+        class="text-secondary font-semibold hover:underline text-sm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View Code
+      </a>
     </div>
   </article>
 </template>

@@ -21,13 +21,13 @@
           >
         </h1>
         <p class="text-lg max-w-xl mx-auto lg:mx-0 font-semibold">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-          nisi ratione natus ipsam eius magni cumque in nam adipisci excepturi
-          tempore officia tenetur voluptates similique, recusandae
-          necessitatibus, beatae explicabo modi!
+          Jeg er en softwareudvikler med fokus på frontend-udvikling i React,
+          TypeScript og JavaScript, men har også erfaring med backend i C#, Java
+          og Node.js. Jeg brænder for at bygge brugervenlige og skalerbare
+          løsninger, hvor kvalitet og funktionalitet går hånd i hånd.
         </p>
         <div class="mt-6 flex justify-center lg:justify-start">
-          <Button label="Hire Me" />
+          <Button label="Hire Me" @click="scrollToContact" />
           <a
             href="/CV-Carl.pdf"
             download
@@ -74,6 +74,13 @@
 </template>
 <script setup>
 import Button from "@/components/UI/Button.vue";
+
+const scrollToContact = () => {
+  const section = document.querySelector("#contact");
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
 </script>
 
 <style scoped>

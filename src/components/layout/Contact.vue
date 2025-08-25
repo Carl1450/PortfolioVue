@@ -44,7 +44,7 @@ import SectionHeader from "@/components/UI/SectionHeader.vue";
 import Input from "@/components/UI/Input.vue";
 import Button from "@/components/UI/Button.vue";
 import { ref } from "vue";
-import emailjs from "emailjs-com"
+import emailjs from "emailjs-com";
 
 const inputs = ref([
   {
@@ -72,15 +72,19 @@ const inputs = ref([
 
 const sendEmail = (e) => {
   e.preventDefault();
-  emailjs.sendForm(
-    "service_9v2zpr8",
-    "template_zr45x3w",
-    e.target,
-    "RfWRTCtEFNA5ME1xo"
-  ).then(
-    () => alert("Message sent!"),
-    (error) => alert("Failed to send: " + error.text)
-  );
+  emailjs
+    .sendForm(
+      "service_9v2zpr8",
+      "template_zr45x3w",
+      e.target,
+      "RfWRTCtEFNA5ME1xo"
+    )
+    .then(
+      () => {
+        alert("Message sent!");
+        e.target.reset();
+      },
+      (error) => alert("Failed to send: " + error.text)
+    );
 };
-
 </script>
