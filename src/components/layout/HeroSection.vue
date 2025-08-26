@@ -31,7 +31,7 @@
         <div class="mt-6 flex justify-center lg:justify-start">
           <Button label="Hire Me" @click="scrollToContact" />
           <a
-            href="/CV-Carl.pdf"
+            href="/CV.pdf"
             download
             class="font-semibold text-lg w-[10rem] h-[55px] dark:text-secondary rounded-full ml-2 border-2 dark:border-secondary hover:scale-105 bg-white dark:bg-transparent flex justify-center items-center text-primary border-primary"
           >
