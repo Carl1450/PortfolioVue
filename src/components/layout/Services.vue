@@ -1,6 +1,6 @@
 <template>
-  <section id="services" class="relative text-white mt-32">
-    <SectionHeader title="My Services" />
+  <section id="experience" class="relative text-white mt-32">
+    <SectionHeader title="My Experience" />
     <div
       class="mt-20 py-8 xl:px-16 px-4 sm:py-16 grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3"
     >
@@ -49,42 +49,42 @@ const services = ref([
     icon: "https://img.icons8.com/ios-filled/100/B2B0E8/google-code.png",
     name: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nisi ratione natus ipsam eius magni cumque in nam adipisci excepturi tempore officia tenetur voluptates similique, recusandae necessitatibus, beatae explicabo modi!",
+      "I build modern, responsive websites and web applications using Vue, Vite, HTML, CSS, and JavaScript. My focus is on creating user-friendly interfaces and seamless experiences that work well on any device. I enjoy turning ideas into interactive, high-quality digital products.",
   },
   {
     id: 2,
-    icon: "https://img.icons8.com/external-vectorslab-glyph-vectorslab/100/B2B0E8/external-Technical-Writing-mobile-app-development-vectorslab-glyph-vectorslab.png",
-    name: "Technical Writing",
+    icon: "https://img.icons8.com/?size=100&id=15888&format=png&color=B2B0E8",
+    name: "Game Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nisi ratione natus ipsam eius magni cumque in nam adipisci excepturi tempore officia tenetur voluptates similique, recusandae necessitatibus, beatae explicabo modi!",
+      "I create engaging games and interactive experiences, primarily using Godot and GDScript. My game development work includes designing gameplay mechanics, building levels, and implementing features that make games fun and rewarding for players.",
   },
   {
     id: 3,
-    icon: "https://img.icons8.com/?size=100&id=TPpnWmxDVJco&format=png&color=B2B0E8",
-    name: "App Development",
+    icon: "https://img.icons8.com/?size=100&id=5zO4D0wewNlS&format=png&color=B2B0E8",
+    name: "Backend Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nisi ratione natus ipsam eius magni cumque in nam adipisci excepturi tempore officia tenetur voluptates similique, recusandae necessitatibus, beatae explicabo modi!",
+      "I have experience building robust backend systems with C#, .NET, and Java, as well as working with databases like MSSQL and PostgreSQL. I design and implement APIs, manage data storage, and ensure secure, scalable server-side solutions.",
   },
   {
     id: 4,
-    icon: "https://img.icons8.com/ios-filled/100/B2B0E8/email-open.png",
-    name: "Web Development",
+    icon: "https://img.icons8.com/ios-filled/100/B2B0E8/bug.png",
+    name: "Testing & Debugging",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nisi ratione natus ipsam eius magni cumque in nam adipisci excepturi tempore officia tenetur voluptates similique, recusandae necessitatibus, beatae explicabo modi!",
+      "I am dedicated to writing reliable code and maintaining high standards through thorough testing and debugging. I use a variety of tools and techniques to identify issues, optimize performance, and ensure that applications run smoothly and without errors.",
   },
   {
     id: 5,
-    icon: "https://img.icons8.com/ios-filled/100/B2B0E8/windows10-personalization.png",
+    icon: "https://img.icons8.com/ios-filled/100/B2B0E8/internet-of-things.png",
     name: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nisi ratione natus ipsam eius magni cumque in nam adipisci excepturi tempore officia tenetur voluptates similique, recusandae necessitatibus, beatae explicabo modi!",
+      "I develop and connect smart devices and embedded systems for IoT solutions. My experience includes integrating sensors, managing device communication, and building applications that bring physical devices online for automation and data collection.",
   },
   {
     id: 6,
-    icon: "https://img.icons8.com/ios-filled/100/B2B0E8/web-design.png",
-    name: "Web Development",
+    icon: "https://img.icons8.com/ios-filled/100/B2B0E8/paint-palette.png",
+    name: "UI/UX Design",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nisi ratione natus ipsam eius magni cumque in nam adipisci excepturi tempore officia tenetur voluptates similique, recusandae necessitatibus, beatae explicabo modi!",
+      "I design user interfaces that are both visually appealing and easy to use. My approach to UI/UX focuses on understanding user needs, creating intuitive layouts, and improving the overall experience through thoughtful design choices.",
   },
 ]);
 </script>

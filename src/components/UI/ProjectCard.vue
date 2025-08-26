@@ -10,7 +10,7 @@
       <header>
         <h3 class="font-bold text-xl mn-2 text-white">{{ title }}</h3>
       </header>
-      <p class="text-gray-300 text-sm">{{ description }}</p>
+      <p class="text-gray-300 text-sm text-justify">{{ description }}</p>
     </section>
 
     <footer class="px-6 pt-4 pb-2">

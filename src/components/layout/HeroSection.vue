@@ -20,11 +20,13 @@
             >Carl Christian</span
           >
         </h1>
-        <p class="text-lg max-w-xl mx-auto lg:mx-0 font-semibold">
-          Jeg er en softwareudvikler med fokus på frontend-udvikling i React,
-          TypeScript og JavaScript, men har også erfaring med backend i C#, Java
-          og Node.js. Jeg brænder for at bygge brugervenlige og skalerbare
-          løsninger, hvor kvalitet og funktionalitet går hånd i hånd.
+        <p class="text-lg max-w-xl mx-auto lg:mx-0 font-semibold text-justify">
+          I am a curious and dedicated software developer with experience in
+          both frontend and backend. My background includes working with Vue,
+          React, C#/.NET, Razor Pages, Java, GDScript, and databases like MSSQL
+          and PostgreSQL. I am motivated by learning new technologies and
+          developing solutions that balance quality, functionality, and
+          scalability.
         </p>
         <div class="mt-6 flex justify-center lg:justify-start">
           <Button label="Hire Me" @click="scrollToContact" />

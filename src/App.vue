@@ -5,7 +5,7 @@
         <div>
           <Navbar />
           <HeroSection />
-          <Counter />
+          <!-- <Counter /> -->
           <Services />
           <Skills />
           <Whyme />
