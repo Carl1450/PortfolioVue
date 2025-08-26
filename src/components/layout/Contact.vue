@@ -14,7 +14,7 @@
           />
         </div>
         <div class="flex justify-between">
-          <Button label="Send" />
+          <Button label="Send" :disabled="sending" />
 
           <div class="mt-2 flex justify-center space-x-3 md:space-x-8">
             <a
@@ -46,6 +46,8 @@ import Button from "@/components/UI/Button.vue";
 import { ref } from "vue";
 import emailjs from "emailjs-com";
 
+const sending = ref(false);
+
 const inputs = ref([
   {
     id: "email",
@@ -72,6 +74,7 @@ const inputs = ref([
 
 const sendEmail = (e) => {
   e.preventDefault();
+  sending.value = true;
   emailjs
     .sendForm(
       "service_9v2zpr8",
@@ -83,8 +86,12 @@ const sendEmail = (e) => {
       () => {
         alert("Message sent!");
         e.target.reset();
+        sending.value = false;
       },
-      (error) => alert("Failed to send: " + error.text)
+      (error) => {
+        alert("Failed to send: " + error.text);
+        sending.value = false;
+    }
     );
 };
 </script>
