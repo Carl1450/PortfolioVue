@@ -11,6 +11,7 @@
             :placeholder="item.placeholder"
             :rows="item.rows"
             :name="item.id"
+            :required="item.required"
           />
         </div>
         <div class="flex justify-between">
@@ -55,6 +56,7 @@ const inputs = ref([
     type: "email",
     placeholder: "email@example.com",
     rows: undefined,
+    required: true,
   },
   {
     id: "subject",
@@ -62,6 +64,7 @@ const inputs = ref([
     type: "text",
     placeholder: "Let us know how we can help you",
     rows: undefined,
+    required: true,
   },
   {
     id: "message",
@@ -69,11 +72,24 @@ const inputs = ref([
     type: "textarea",
     placeholder: "Leave a comment",
     rows: 6,
+    required: true,
   },
 ]);
 
 const sendEmail = (e) => {
   e.preventDefault();
+
+  const form = e.target;
+  const email = form.email.value.trim();
+  const subject = form.subject.value.trim();
+  const message = form.message.value.trim();
+
+  if (!email || !subject || !message) {
+    alert("Please fill out all fields before sending.");
+    sending.value = false;
+    return;
+  }
+
   sending.value = true;
   emailjs
     .sendForm(

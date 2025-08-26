@@ -1,5 +1,6 @@
 <template>
   <button
+    :type="'submit'"
     @click="onClick"
     :disabled="disabled"
     class="relative overflow-hidden rounded-full bg-gray-700 dark:bg-white text-white w-[180px] h-[60px] text-lg font-semibold flex justify-center items-center transition-all duration-300"
