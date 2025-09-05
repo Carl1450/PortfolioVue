@@ -115,12 +115,12 @@ const projects = ref([
     //codeLink: "/",
   },
   {
-    title: "Portfolio Website",
-    description: "A personal portfolio built with Vue and TailwindCSS, showcasing my skills, projects, and experience. Responsive design, smooth animations, and a contact form for collaboration.",
+    title: "ToDo App",
+    description: "A mobile ToDo application built with React Native and Expo, designed for efficient task management on the go. Features a clean interface, persistent storage, and intuitive controls for organizing daily activities. Fully responsive and optimized for productivity.",
     image: "/portfolioProject.png",
-    tags: ["Vue", "TailwindCSS"],
-    liveLink: "https://portfolio-carl-dev.netlify.app/",
-    codeLink: "https://github.com/Carl1450/PortfolioVue",
+    tags: ["React Native", "TypeScript", "JavaScript"],
+    //liveLink: "/",
+    codeLink: "https://github.com/Carl1450/ToDoApp",
   },
   {
     title: "Weather App",
