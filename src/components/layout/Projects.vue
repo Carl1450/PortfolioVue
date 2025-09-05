@@ -115,7 +115,7 @@ const projects = ref([
     //codeLink: "/",
   },
   {
-    title: "ToDo App",
+    title: "ToDoApp",
     description: "A mobile ToDo application built with React Native and Expo, designed for efficient task management on the go. Features a clean interface, persistent storage, and intuitive controls for organizing daily activities. Fully responsive and optimized for productivity.",
     image: "/portfolioProject.png",
     tags: ["React Native", "TypeScript", "JavaScript"],
